@@ -4,7 +4,7 @@ FROM  java:8
 RUN apt-get update  
 RUN apt-get install -y maven
 
-# Adding prometheusa-app to container
+# Adding prometheus-app to container
 ADD . /usr/prometheus  
 WORKDIR /usr/prometheus
 RUN ["mvn", "package"]
